@@ -8,6 +8,8 @@ import { useState } from 'react';
 import Navi from './Navi';
 import About from './About';
 import Projects from './Projects';
+import Greet from './Greet';
+
 
 const Home = () => {
     const[fix,setFix]= useState(false)
@@ -22,19 +24,22 @@ const Home = () => {
     window.addEventListener("scroll",setFixedSidebar)
 
     return (
-        <div className="container-fluid">
-            <div className="row">
+        <div>
+            <div className="row" style={{width:'100%'}}>
                <div className="col-lg-6 vh-400 bg-secondary text-white container1" style={{width:'25%'}} >
                     <div className={fix ? 'container fixed vh-400' : 'container vh-400'}>
                             <Navi/>
                     </div>
                 </div>
-                <div className="col-lg-6 vh-400  container2" style={{width:'75'}}>
+                <div className="col-lg-9 vh-500  container2" style={{width:'75'}}>
+                   <div className='vh-100 intro' id="greet">
+                      <Greet/>
+                   </div>
                    <div className='vh-100' id="about">
                       <About/>
                    </div>
                    <hr/>
-                   <div className='vh-100' id="contact">
+                   <div className='vh-100 bg-light' id="contact">
                         <Contact/>
                    </div>
                    <hr></hr>

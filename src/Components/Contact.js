@@ -39,7 +39,7 @@ const Contact = ({contact}) => {
                 </div>
                 <div className="form-group mb-3">
                     <label className="form-label"> Your Email: </label> 
-                    <input className="form-control border-b-2 text-gray-700 w-full bg-gray-100 h-10 px-2" name="email" value={formValues.email} placeholder="Email" onChange={(e) =>
+                    <input className="form-control border-b-2 text-gray-700 w-70 bg-gray-100 h-10 px-2" name="email" value={formValues.email} placeholder="Email" onChange={(e) =>
             setFormValues({ ...formValues, email: e.target.value })} required />
                 </div>
                 <div className="form-group mb-3">
@@ -47,7 +47,7 @@ const Contact = ({contact}) => {
                     <textarea className="form-control" name="message" value={formValues.message} onChange={(e) =>
             setFormValues({ ...formValues, message: e.target.value })} placeholder="Message" required />
                 </div>
-                <div>
+                <div className="button">
                     <button className="btw">Send Message</button>
                 </div>
             </form>

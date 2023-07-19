@@ -4,6 +4,7 @@ import Home from "./Components/Home";
 import About from "./Components/About";
  import Contact from "./Components/Contact";
 import Projects from "./Components/Projects";
+import Greet from "./Components/Greet";
 function App() {
   return (
     <BrowserRouter>
@@ -12,6 +13,7 @@ function App() {
             </div>
             <div>
               <Routes>
+              <Route path="/components/greet" Component={Greet}/>
               <Route path="/components/about" Component={About}/>
               <Route path="/components/contact" Component={Contact}/> 
               <Route path="/components/projects" Component={Projects}/> 

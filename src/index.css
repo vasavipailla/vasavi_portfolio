@@ -33,7 +33,7 @@ code {
 .greet {
   font-family: 'Roboto';
   font-style: normal;
-  font-size: xx-large;
+  font-size:60px;
 }
 
 .listed {
@@ -49,8 +49,15 @@ code {
   position: fixed;
 }
 
+
+
 ul {
   line-height:calc(2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:40px;
+  padding-top: 30px;
 }
 
 .list {
@@ -231,9 +238,9 @@ span{
 }
  
 
-.skills {
-  padding: 30px;
-}
+/* .skills {
+  padding: 20px;
+} */
 
 .education1 {
   margin: 20px;
@@ -243,4 +250,15 @@ span{
 
 .project-one {
   line-height:50px;
+}
+
+.button {
+  text-align: center;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
