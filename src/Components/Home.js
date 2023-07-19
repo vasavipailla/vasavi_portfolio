@@ -24,7 +24,7 @@ const Home = () => {
     window.addEventListener("scroll",setFixedSidebar)
 
     return (
-        <div>
+        <div className='row1'>
             <div className="row" style={{width:'100%'}}>
                <div className="col-lg-6 vh-400 bg-secondary text-white container1" style={{width:'25%'}} >
                     <div className={fix ? 'container fixed vh-400' : 'container vh-400'}>

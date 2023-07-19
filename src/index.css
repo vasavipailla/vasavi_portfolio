@@ -208,7 +208,7 @@ form {
   height: 700px;
 }
 
-.para {
+/* .para {
   padding: 20px;
   line-height: normal;
   font-weight: 500;
@@ -223,7 +223,7 @@ span{
   padding: 30px;
   font-weight:500;
   font-size: large;
-}
+} */
 
 .education {
   display: flex;
@@ -242,11 +242,11 @@ span{
   padding: 20px;
 } */
 
-.education1 {
+/* .education1 {
   margin: 20px;
   display: flex;
   flex-direction: column;
-}
+} */
 
 .project-one {
   line-height:50px;
@@ -261,4 +261,17 @@ span{
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+
+.row1 {
+  @media  (min-width:480px) {
+    display:flex;
+    flex-direction:row;
+  }
+}
+
+.container1 {
+  @media (min-width:480px) {
+    width:100%;
+  }
 }
