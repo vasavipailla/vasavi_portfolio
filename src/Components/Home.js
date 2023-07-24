@@ -27,7 +27,7 @@ const Home = () => {
         <div className='row1'>
             <div className="row" style={{width:'100%'}}>
                <div className="col-lg-6 vh-400 bg-secondary text-white container1" style={{width:'25%'}} >
-                    <div className={fix ? 'container fixed vh-400' : 'container vh-400'}>
+                    <div className={fix ? 'container fixed' : 'container vh-400'}>
                             <Navi/>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ const Home = () => {
                    <div className='vh-100 intro' id="greet">
                       <Greet/>
                    </div>
-                   <div className='vh-100' id="about">
+                   <div className='aa' id="about">
                       <About/>
                    </div>
                    <hr/>

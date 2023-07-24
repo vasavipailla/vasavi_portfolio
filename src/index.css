@@ -203,12 +203,12 @@ form {
   align-content: center;
 }
 
-.vl {
+.line {
   border-left: 3px solid grey;
   height: 700px;
 }
 
-/* .para {
+.para {
   padding: 20px;
   line-height: normal;
   font-weight: 500;
@@ -223,7 +223,7 @@ span{
   padding: 30px;
   font-weight:500;
   font-size: large;
-} */
+}
 
 .education {
   display: flex;
@@ -242,11 +242,11 @@ span{
   padding: 20px;
 } */
 
-/* .education1 {
+.education1 {
   margin: 20px;
   display: flex;
   flex-direction: column;
-} */
+}
 
 .project-one {
   line-height:50px;
@@ -274,4 +274,23 @@ span{
   @media (min-width:480px) {
     width:100%;
   }
+}
+
+@media screen and (max-width:400px){
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+ .row {
+  display: flex;
+  }
+  .container.fixed {
+    position: relative;
+  }
+  .line {
+    border-top: 3px solid grey;
+    height: 600px;
+    border-left: none;
+  }
+
 }
