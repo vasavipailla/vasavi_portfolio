@@ -6,18 +6,18 @@ const About= ({about}) => {
         <div className="about" >
           <div className="education w-50">
             <h3 className="heading">Education</h3>
-             <div className="education1 m-1 d-flex flex-column">
+             <div className="education1 m-1">
               <div className="para">
-                <p><BiCaretRight/>Jawaharlal Nehru <span>Technological University – </span><span>From Oct 2008 till </span><span>April2012</span></p>
-                <p><BiWifi0/>Degree subject – Computer Science Engineering</p>
+                <p className="sign"><BiCaretRight/>Jawaharlal Nehru <span>Technological University – </span><span>From Oct 2008 till </span><span>April2012</span></p>
+                <p className="sign"><BiWifi0/>Degree subject – Computer Science Engineering</p>
               </div>
               <div className="para">
-                <p><BiCaretRight/>Narayana Junior College <span>(Post-Secondary </span><span>Education – 2 years)– <span>From May 2006 till March </span><span>2008</span></span></p>
-                <p><BiWifi0/>Subjects – Maths, Physics and Chemistry</p>
+                <p className="sign"><BiCaretRight/>Narayana Junior College <span>(Post-Secondary </span><span>Education – 2 years)– <span>From May 2006 till March </span><span>2008</span></span></p>
+                <p className="sign"><BiWifi0/>Subjects – Maths, Physics and Chemistry</p>
               </div>
               <div className="para">
-                <p><BiCaretRight/>Revathi High School – till <span>2006</span></p>
-                <p><BiWifi0/>Qualification – Secondary Education</p>
+                <p className="sign"><BiCaretRight/>Revathi High School – till <span>2006</span></p>
+                <p className="sign"><BiWifi0/>Qualification – Secondary Education</p>
               </div>
               </div>
           </div>
@@ -25,7 +25,8 @@ const About= ({about}) => {
           <div>
              <hr className="line"></hr>
           </div>
-          <div className="skills w-60">
+
+          <div className="skills">
             <h3 className="heading">Skills</h3>
             <div className="para1">
               <p><BiWifi0/>HTML5</p>
