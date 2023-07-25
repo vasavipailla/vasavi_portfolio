@@ -318,4 +318,15 @@ span{
   .sign {
     display: inline-block;
   }
+  .para {
+    line-height: normal;
+    font-weight:300;
+    font-size:small;
+    color: white;
+  } 
+  .para1 {
+    font-weight:300;
+    font-size:medium;
+    color: white;
+  }
 } 
