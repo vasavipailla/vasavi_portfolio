@@ -3,6 +3,8 @@ import { HiOutlineUser } from "react-icons/hi";
 import { FaRegEnvelope } from "react-icons/fa";
 import { GoProjectSymlink } from "react-icons/go";
 import {AiOutlineHome} from "react-icons/ai";
+import { HiMenu} from "react-icons/hi";
+import { useState } from "react";
 
 const Navi = () => {
     const handleClickScroll = () => {
@@ -36,9 +38,18 @@ const Navi = () => {
         }
       };
 
+      const [showNavbar, setShowNavbar] = useState(false)
+      
+        const handleShowNavbar = () => {
+          setShowNavbar(!showNavbar)
+        }
+
     return  (
       <div className="listed1">
-          <div className="listed">
+          <div className="menu-icon" onClick={handleShowNavbar}>
+            <HiMenu />
+          </div>
+          <div className={`nav-elements  ${showNavbar && 'active'}`}>
               <ul>
                 <li><AiOutlineHome size={30}/><Link  className="list text-dark" href="#components/greet" onClick={handleClickScroll}>Home</Link></li>
                 <li><HiOutlineUser size={30}/><Link  className="list text-dark" href="#components/about" onClick={handleClickScroll1}>About</Link></li>
