@@ -51,7 +51,7 @@ const Navi = () => {
     return  (
       <div className="listed1">
           <div className="menu-icon" onClick={handleShowNavbar}>
-            <HiMenu />
+            <HiMenu style={{fontSize:"30px"}}/>
           </div>
           <div className={`nav-elements  ${showNavbar && 'active'}`}>
               <ul className="navUl">

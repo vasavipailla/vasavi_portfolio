@@ -1,6 +1,7 @@
 import React from 'react';
 import { PiHandWavingBold } from "react-icons/pi"
 
+
 const Greet = () => {
     return(
         <div className='greeting'>

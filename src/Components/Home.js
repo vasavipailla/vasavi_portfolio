@@ -9,6 +9,7 @@ import Navi from './Navi';
 import About from './About';
 import Projects from './Projects';
 import Greet from './Greet';
+import BackToTopButton from './BackToTopButton';
 
 
 const Home = () => {
@@ -48,6 +49,7 @@ const Home = () => {
                    </div>
                 </div>
             </div>
+            <BackToTopButton/>
         </div>
     )
 }
