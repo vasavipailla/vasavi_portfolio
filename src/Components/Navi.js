@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { HiOutlineUser } from "react-icons/hi";
+import { GiSkills } from "react-icons/gi";
 import { FaRegEnvelope } from "react-icons/fa";
 import { GoProjectSymlink } from "react-icons/go";
 import {AiOutlineHome} from "react-icons/ai";
@@ -12,6 +12,7 @@ const Navi = () => {
       if (element) {
         // 👇 Will scroll smoothly to the top of the next section
         element.scrollIntoView({ behavior: 'smooth' });
+        setShowNavbar(false);
       }
     };
     const handleClickScroll1 = () => {
@@ -19,6 +20,7 @@ const Navi = () => {
         if (element) {
           // 👇 Will scroll smoothly to the top of the next section
           element.scrollIntoView({ behavior: 'smooth' });
+          setShowNavbar(false);
         }
       };
 
@@ -27,6 +29,7 @@ const Navi = () => {
         if (element) {
           // 👇 Will scroll smoothly to the top of the next section
           element.scrollIntoView({ behavior: 'smooth' });
+          setShowNavbar(false);
         }
       };
 
@@ -35,6 +38,7 @@ const Navi = () => {
         if (element) {
           // 👇 Will scroll smoothly to the top of the next section
           element.scrollIntoView({ behavior: 'smooth' });
+          setShowNavbar(false);
         }
       };
 
@@ -50,9 +54,9 @@ const Navi = () => {
             <HiMenu />
           </div>
           <div className={`nav-elements  ${showNavbar && 'active'}`}>
-              <ul>
+              <ul className="navUl">
                 <li><AiOutlineHome size={30}/><Link  className="list text-dark" href="#components/greet" onClick={handleClickScroll}>Home</Link></li>
-                <li><HiOutlineUser size={30}/><Link  className="list text-dark" href="#components/about" onClick={handleClickScroll1}>About</Link></li>
+                <li><GiSkills size={30}/><Link  className="list text-dark" href="#components/about" onClick={handleClickScroll1}>Skills</Link></li>
                 <li><FaRegEnvelope size={25}/><Link className="list text-dark" href="#components/contact" onClick={handleClickScroll2}>Contact</Link></li>
                 <li><GoProjectSymlink size={25}/><Link className="list text-dark" href="#components/projexts" onClick={handleClickScroll3}>Projects</Link></li>
               </ul>

@@ -13,7 +13,11 @@ code {
     monospace;
 } 
 
-
+.row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
  /* .container1 {
   display: flex;
@@ -70,9 +74,10 @@ code {
 }
 
 .nav-elements ul a {
-  font-size: 16px;
-  font-weight: 400;
+  font-size:20px;
+  font-weight:700;
   color: #2f234f;
+  font-style: bold;
   text-decoration: none;
 }
 
@@ -103,7 +108,7 @@ ul {
 
 .list {
   text-decoration: none;
-  font-family:'Roboto';
+  font-family:sans-serif;
   font-style:bold;
   font-weight:700;
   font-size:x-large;
@@ -238,10 +243,21 @@ form {
 
 .about{
   display: flex;
-  flex-direction: row;
+  flex-direction:column;
   padding: 50px;
-  justify-content: space-between;
-  align-content: center;
+  justify-content: center;
+  align-content: center; 
+  align-items: center;
+  
+  /* background: yellow; */
+}
+
+.skills {
+  width:400px;
+  height:600px;
+  padding: 20px;
+  border: 4px dashed teal;
+  
 }
 
 .line {
@@ -323,12 +339,12 @@ span{
   }
   .about {
     display: flex;
-    flex-direction: column;
   
+    justify-content: center;
+    align-content: center; 
+    align-items: center;
   }
-  .pp{
-    background-color:#5d5c61;
-  }
+  
  .row {
   display: flex;
   }
@@ -342,14 +358,15 @@ span{
     height: 0cm;
   }
   .skills {
-    margin: 30px;
+    width:300px;
+    height:600px;
+    padding: 20px;
+    border: 4px dashed teal;
   }
   .heading {
     margin:20px;
   }
-  .para1 {
-    padding: 0ch;
-  }
+  
   .container1 {
     width:100% !important;
     background-color: #6c757d;
@@ -363,16 +380,12 @@ span{
   .sign {
     display: inline-block;
   }
-  .para {
-    line-height: normal;
-    font-weight:300;
-    font-size:small;
-    color: white;
-  } 
+  
   .para1 {
     font-weight:300;
     font-size:medium;
-    color: white;
+    color:black;
+    padding: 0ch;
   }
   .nav-elements ul li:not(:last-child) {
     margin-right: 30px;
@@ -384,14 +397,17 @@ span{
   }
 
   .nav-elements {
-    position: absolute;
     left:0;
-    top: 60px;
+    position: absolute;  
     background-color:burlywood;
     width: 0px;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
     overflow: hidden;
+  }
+
+  .navUl {
+    margin-left: 0;
   }
 
   .nav-elements.active {
