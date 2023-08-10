@@ -27,9 +27,9 @@ const Home = () => {
     return (
         <div className='row1'>
             <div className="row" style={{width:'100%'}}>
-               <div className="col-lg-6 vh-400 bg-secondary text-white container1" style={{width:'25%'}} >
+               <div className="col-lg-6 vh-400  text-white container1" style={{width:'25%'}} >
                     <div className={fix ? 'container fixed' : 'container vh-400'}>
-                            <Navi/>
+                        <Navi/>
                     </div>
                 </div>
                 <div className="col-lg-9 vh-500  container2" style={{width:'75'}}>
@@ -40,7 +40,7 @@ const Home = () => {
                       <About/>
                    </div>
                    <hr/>
-                   <div className='vh-100 bg-light' id="contact">
+                   <div className='vh-100' id="contact">
                         <Contact/>
                    </div>
                    <hr></hr>
