@@ -36,16 +36,17 @@ const Home = () => {
                    <div className='vh-100 intro' id="greet">
                       <Greet/>
                    </div>
+                   <hr/>
                    <div className='vh-200 pp' id="about">
                       <About/>
                    </div>
                    <hr/>
-                   <div className='vh-100' id="contact">
-                        <Contact/>
-                   </div>
-                   <hr></hr>
                    <div className='vh-150' id="projects">
                         <Projects/>
+                   </div>
+                   <hr/>
+                   <div className='vh-100' id="contact">
+                        <Contact/>
                    </div>
                 </div>
             </div>

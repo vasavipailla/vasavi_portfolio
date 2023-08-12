@@ -61,8 +61,8 @@ const Navi = () => {
               <ul className="navUl">
                 <li><AiOutlineHome size={30}/><Link  className="list text-dark" href="#components/greet" onClick={handleClickScroll}>Home</Link></li>
                 <li><GiSkills size={30}/><Link  className="list text-dark" href="#components/about" onClick={handleClickScroll1}>Skills</Link></li>
-                <li><FaRegEnvelope size={25}/><Link className="list text-dark" href="#components/contact" onClick={handleClickScroll2}>Contact</Link></li>
                 <li><GoProjectSymlink size={25}/><Link className="list text-dark" href="#components/projexts" onClick={handleClickScroll3}>Projects</Link></li>
+                <li><FaRegEnvelope size={25}/><Link className="list text-dark" href="#components/contact" onClick={handleClickScroll2}>Contact</Link></li>
               </ul>
           </div>
       </div>

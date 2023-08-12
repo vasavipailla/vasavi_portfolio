@@ -28,6 +28,7 @@ const About= () => {
               <div className="para1">
                 <p><BiWifi0/>HTML5</p>
                 <p><BiWifi0/>CSS3</p>
+                <p><BiWifi0/>Bootstrap</p>
                 <p><BiWifi0/>React</p>
                 <p><BiWifi0/>JavaScript</p>
                 <p><BiWifi0/>Figma</p>
