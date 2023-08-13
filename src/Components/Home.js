@@ -10,7 +10,7 @@ import About from './About';
 import Projects from './Projects';
 import Greet from './Greet';
 import BackToTopButton from './BackToTopButton';
-
+import Footer from './Footer'
 
 const Home = () => {
     const[fix,setFix]= useState(false)
@@ -47,6 +47,10 @@ const Home = () => {
                    <hr/>
                    <div className='vh-100' id="contact">
                         <Contact/>
+                   </div>
+                   <hr/>
+                   <div className='text-center' style={{marginBottom:'5px',fontSize:'20px'}}>
+                      <Footer/>
                    </div>
                 </div>
             </div>

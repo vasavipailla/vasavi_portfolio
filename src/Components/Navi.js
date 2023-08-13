@@ -4,10 +4,11 @@ import { FaRegEnvelope } from "react-icons/fa";
 import { GoProjectSymlink } from "react-icons/go";
 import {AiOutlineHome} from "react-icons/ai";
 import { HiMenu} from "react-icons/hi";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import profile_pic from '../images/vpc.png'
 
 const Navi = () => {
+    const burgerMenu = useRef(null)
     const handleClickScroll = () => {
       const element = document.getElementById('greet');
       if (element) {
@@ -43,18 +44,26 @@ const Navi = () => {
         }
       };
 
-      const [showNavbar, setShowNavbar] = useState(false)
+    const [showNavbar, setShowNavbar] = useState(false)
       
-        const handleShowNavbar = () => {
-          setShowNavbar(!showNavbar)
-        }
+    const handleShowNavbar = () => {
+        setShowNavbar(!showNavbar)
+    }
+
+    const closeBurgerMenu = (e) => {
+      if(burgerMenu.current && showNavbar && !burgerMenu.current.contains(e.target)){
+        setShowNavbar(false)
+      }
+    }
+    
+    document.addEventListener('mousedown',closeBurgerMenu)
 
     return  (
       <div className="listed1">
           <div>
             <img className="rounded-circle profile" alt="avatar1" src={profile_pic} width="150" height="150"/>
           </div>
-          <div className="menu-icon" onClick={handleShowNavbar}>
+          <div className="menu-icon" ref={burgerMenu} onClick={handleShowNavbar}>
             <HiMenu style={{fontSize:"30px"}}/>
           </div>
           <div className={`nav-elements  ${showNavbar && 'active'}`}>
