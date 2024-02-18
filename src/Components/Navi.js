@@ -14,7 +14,7 @@ const Navi = () => {
       if (element) {
         // 👇 Will scroll smoothly to the top of the next section
         element.scrollIntoView({ behavior: 'smooth' });
-        setShowNavbar(false);
+        setShowNavbar(false); 
       }
     };
     const handleClickScroll1 = () => {

@@ -3,7 +3,7 @@ import { BiCaretRight, BiWifi0 } from "react-icons/bi";
 
 const About= () => {
        return(
-        <div className="about" >
+        <div  className="about" >
           {/* <div className="education w-50">
             <h3 className="heading">Education</h3>
              <div className="education1 m-1">
@@ -24,8 +24,8 @@ const About= () => {
             
          
             <div className="skills">
-              <h3 className="heading">Skills</h3>
-              <div className="para1">
+              <h3 data-testid="first" className="heading">Skills</h3>
+              <div data-testid="second" className="para1">
                 <p><BiWifi0/>HTML5</p>
                 <p><BiWifi0/>CSS3</p>
                 <p><BiWifi0/>Bootstrap</p>
