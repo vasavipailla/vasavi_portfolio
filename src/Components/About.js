@@ -26,6 +26,8 @@ const About= () => {
             <div className="skills">
               <h3 data-testid="first" className="heading">Skills</h3>
               <div data-testid="second" className="para1">
+                <p><BiWifi0/>Python Programming</p>
+                <p><BiWifi0/>Pandas</p>
                 <p><BiWifi0/>HTML5</p>
                 <p><BiWifi0/>CSS3</p>
                 <p><BiWifi0/>Bootstrap</p>
