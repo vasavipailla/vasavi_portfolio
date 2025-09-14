@@ -8,8 +8,8 @@ const Greet = () => {
              <h2 className="greet"><PiHandWavingBold /> &nbsp;I am Vasavi Reddy Pailla</h2>
              <p className='self'>Seeking Data Analyst position. I have 
              <span className='my-self'>Computer Science Bachelors degree</span> from India. 
-             Recently<span className='my-self'>completed IT programming</span>course in
-             <span className='my-self'>Data Analysis</span>at
+             Aspiring  with hands-on experience in Excel and SQL,<span className='my-self'>data analyst</span> with hands-on experience in 
+             <span className='my-self'>Python,Pandas,SQL etc</span>at
              <span className='my-self'>Lerum University.</span></p>
         </div>
     )
